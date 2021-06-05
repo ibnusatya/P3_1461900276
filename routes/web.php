@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\KamarController0276;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('kamar0276', KamarController0276::class);
+
+Route::resource('kamarTambah0276', KamarController0276::class);
+
+Route::resource('kamarEdit0276', KamarController0276::class);
